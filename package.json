@@ -1,0 +1,31 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "Teste Zazcar",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://stockler@bitbucket.org/stockler/desafio.git"
+  },
+  "author": "Rafael Stockler",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/stockler/desafio#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "angular": "^1.5.7",
+    "angular-mocks": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
+  }
+}
