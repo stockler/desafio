@@ -4,7 +4,7 @@
   "description": "Teste Zazcar",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run --browsers Chrome",
+    "test": "./node_modules/.bin/karma start --single-run --browsers Firefox",
     "start": "node server.js"
   },
   "repository": {
@@ -32,6 +32,7 @@
     "jasmine-core": "^2.4.1",
     "karma": "^1.1.0",
     "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2"
   }
 }
