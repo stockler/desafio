@@ -9,4 +9,5 @@ before_script:
 deploy:
   provider: heroku
   api_key: 29d06ac0-6368-440d-9039-c9acfa543aae
+  app: zazcar-desafio
   on: dev
