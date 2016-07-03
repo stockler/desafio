@@ -1,0 +1,22 @@
+<md-content class="md-padding" layout-xs="column" layout="row" layout-wrap layout-align="center top">
+		<md-card ng-repeat="shot in vm.shots" flex-xs flex-gt-xs="20" class="card-container">
+			<img ng-src="{{ shot.images.teaser }}" class="md-card-image" alt="{{ shot.title }}">
+			<md-card-actions layout="row" layout-align="end center" class="card-actions">
+				<md-card-text>
+            		<span class="md-headline">{{ shot.title }}</span>
+          		</md-card-text>
+	         	<md-button class="md-icon-button" aria-label="Favorite">
+	            	<md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+	          	</md-button>
+	          	<md-button class="md-icon-button" aria-label="Settings">
+	            	<md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+	          	</md-button>
+	          	<md-button class="md-icon-button" aria-label="Share">
+	            	<md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+	          	</md-button>
+	        </md-card-actions>
+
+		</md-card>
+	
+  
+</md-content>

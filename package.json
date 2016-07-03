@@ -1,0 +1,38 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "Teste Zazcar",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers Firefox",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://stockler@bitbucket.org/stockler/desafio.git"
+  },
+  "author": "Rafael Stockler",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/stockler/desafio#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-aria": "^1.5.7",
+    "angular-material": "^1.0.9",
+    "angular-mocks": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.4",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2"
+  }
+}

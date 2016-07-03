@@ -1,0 +1,27 @@
+.main {
+	background: #f4f4f4;
+}
+
+.card-actions {
+	margin-top: -50px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    opacity: .8;
+    height: 50px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.card-container {
+	padding: 0.5em;
+}
+
+.card-container md-card-text {
+	text-align: left;
+}
+
+.card-container md-card-text span {
+	font-size: 18px;
+	
+}
