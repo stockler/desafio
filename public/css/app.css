@@ -3,18 +3,19 @@
 }
 
 .card-actions {
-	margin-top: -50px;
-    margin-bottom: 10px;
+	margin-top: -65px;
+    margin-bottom: 0px;
     background-color: black;
     color: white;
     opacity: .8;
-    height: 50px;
+    height: 65px;
     margin-left: 0;
     width: 100%;
 }
 
 .card-container {
 	padding: 0.5em;
+    height: 220px;
 }
 
 .card-container md-card-text {
