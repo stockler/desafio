@@ -6,7 +6,9 @@
     'ngAnimate',
     'ngAria',
     'ngMaterial',
-    'shots.widget'
+    'ngSanitize',
+    'shots.widget',
+    'shot.widget'
   ])
   .config(function($urlRouterProvider, $locationProvider, $mdThemingProvider) {
     $urlRouterProvider.otherwise("/");
