@@ -1,4 +1,4 @@
-<md-card flex-xs flex-gt-xs="40" ng-mouseleave="showHideDetails()" ng-mouseenter="showHideDetails()" height="200">
+<md-card flex-xs flex-sm="40" flex-gt-sm="30" ng-mouseleave="showHideDetails()" ng-mouseenter="showHideDetails()">
   <div class="card-container">
     <div ng-style="{ 'background-image': 'url({{shot.images.normal}})', 'background-size': 'cover', 'height': '250px' }"></div>     
     <md-card-actions layout="row" layout-wrap layout-align="center center" class="links-actions">
@@ -25,7 +25,7 @@
     </md-card-actions>
   </div>
   <div id="{{ shot.id }}" ng-if="show">
-    <md-card-header>
+    <md-card-header layout-align="left center">
       <md-card-avatar>
         <img class="md-user-avatar" ng-src="{{ shot.user.avatar_url }}"/>
       </md-card-avatar>
@@ -34,7 +34,7 @@
       </md-card-text>
     </md-card-header>
     <md-card-content>
-      <div ng-bind-html="shot.user.bio"></div>
+      <div ng-bind-html="shot.description"></div>
     </md-card-content>
   </div>
 </md-card>
