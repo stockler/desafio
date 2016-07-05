@@ -1,3 +1,32 @@
+<div class="shots" >
+	<div class="shot" ng-repeat="shot in vm.shots">
+		<div shot="shot"></div>
+	</div>
+
+</div>
+
+
+<!--
+
+Funciona mais ou menos
+
 <md-content layout-xs="column" layout="row" layout-wrap layout-align="center top">
-	<div shot="shot" ng-repeat="shot in vm.shots"></div>
-</md-content>
+	<div layout="row" flex-xs flex-sm="40" flex-gt-sm="30" ng-repeat="shot in vm.shots">
+		<div shot="shot" ></div>
+	</div>
+</md-content>-->
+<!--	
+
+Não funciona legal
+
+<md-grid-list md-cols="4" md-cols-xs="1" md-cols-md="3" md-cols-sm="2"
+            md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter-gt-md="8px"
+            md-gutter-gt-sm="4px" md-gutter="1px" md-row-height="200px"> 
+                    <md-grid-tile
+                    ng-repeat="shot in vm.shots"
+                    >  
+                                         
+					<div shot="shot"></div>
+                             
+              </md-grid-tile>        
+      </md-grid-list>  -->

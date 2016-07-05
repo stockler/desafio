@@ -4,8 +4,14 @@
   "description": "Teste Zazcar",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run --browsers Firefox",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "npm run unit",
+    "unit": "./node_modules/.bin/karma start --single-run --browsers Firefox",
+    "unit:watch": "./node_modules/.bin/karma start --browsers Firefox",
+    "e2e": "./node_modules/protractor/bin/protractor protractor.conf.js",
+    "webdriver:update": "./node_modules/protractor/bin/webdriver-manager update",
+    "webdriver:start": "./node_modules/protractor/bin/webdriver-manager start",
+    "webdriver": "./node_modules/protractor/bin/webdriver-manager"
   },
   "repository": {
     "type": "git",
@@ -34,6 +40,7 @@
     "karma": "^1.1.0",
     "karma-chrome-launcher": "^1.0.1",
     "karma-firefox-launcher": "^1.0.0",
-    "karma-jasmine": "^1.0.2"
+    "karma-jasmine": "^1.0.2",
+    "protractor": "^3.3.0"
   }
 }
