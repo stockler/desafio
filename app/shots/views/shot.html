@@ -1,4 +1,4 @@
-<md-card flex ng-mouseleave="showHideDetails()" ng-mouseenter="showHideDetails()" class="shot-extend">
+<md-card flex class="shot-extend" ng-class="{ 'shot-active': show }" ng-click="showHideDetails()" ng-mouseleave="hideDetails()">
 
     <div class="card-container">
       <div ng-style="{ 'background-image': 'url({{shot.images.normal}})', 'background-size': 'cover', 'height': '250px' }"></div>     
@@ -25,7 +25,7 @@
         </div>            
       </md-card-actions>
     </div>
-    <div id="{{ shot.id }}" ng-show="show">
+    <div id="{{ shot.id }}">
       <md-card-header layout-align="left center">
         <md-card-avatar>
           <img class="md-user-avatar" ng-src="{{ shot.user.avatar_url }}"/>

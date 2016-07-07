@@ -2,9 +2,9 @@ angular
   .module('shot.widget', [])
   .directive('shot', shot);
 
-shot.$inject = ['$compile', '$templateRequest'];
+shot.$inject = ['$compile', '$templateRequest', '$window'];
 
-function shot($compile, $templateRequest) {
+function shot($compile, $templateRequest, $window) {
   return {
     restrict: 'AE',
     replace: true,
@@ -20,6 +20,16 @@ function shot($compile, $templateRequest) {
       scope.showHideDetails = function() {
         scope.show = !scope.show;
       };
+
+      scope.hideDetails = function() {
+        scope.show = false;
+      };
+
+      angular.element($window).bind('resize', function() {
+        scope.$apply(function() {
+            scope.hideDetails();
+        });
+    });
     }
   };
 }
